@@ -19,7 +19,7 @@ public class Program
         static double CalculateTotal() => UtahSalesTax() * CalculateShoppingCartSubTotal();
 
         static double UtahSalesTax() => 8.0;
-        static double CalculateShoppingCartSubTotal()
+        static double CalculateShoppingCartSubTotal();
         {
             //template
             //this is our code that is generally longer
