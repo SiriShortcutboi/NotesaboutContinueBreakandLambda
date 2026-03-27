@@ -5,36 +5,34 @@ public class Program
 {
 	public static void Main()
 	{
-        //break; continue;
+       //expression-bodied methods through Lambda
 
-        for (int i = 0; i < 10; i++)
-		{
-            Console.WriteLine($"{i}");
+       //simple method one liner to replace
+       // static int add(int x, int y)
+
+
+        static int Add(int x, int y) => x + y;
+        static bool IsEven(int x) => x % 2 == 0;  
+        static string FullName(string first, string last) => first + "" + last;
+        static void Printnumber(int number) => Console.WriteLine(number);
+
+        static double CalculateTotal() => UtahSalesTax() * CalculateShoppingCartSubTotal();
+
+        static double UtahSalesTax() => 8.0;
+        static double CalculateShoppingCartSubTotal()
+        {
+            //template
+            //this is our code that is generally longer
+            //so long
+            //this 
             //code
-            continue;
-            //i represent a person applying to job
-
-            //step one to check if good
-                //step 2
-                    //step 3 fail
-                        //continue is like a skip, it says dont worry about it sweetheart, move on to the next thing.
-
-                            //step 4
-                                //step 5
-                                    //step 6
-            
-            
-             //break is used way more than continue, 
-            //using continue will take the compiler to it's next exectuion rather than finishing that method
-            //so in this case it doesnt print 5, and it goes to its next execution: Printing 6
-            
-            
-            
-            //break; 
-            //break exits You from a loop, 
-            //return exits You from a whole method, 
-            // you'll probably see return more when you have your method by itself down at the bottom
-            
+            // is
         }
-	}
+
+
+        //usually our expression bodied methods are short methods combining the work
+        //  of longer bodied methods together, but short hand on short hand is acceptable it just doesnt usualyl happen
+        //not incredibly 1000% vital but other people use it and you should be use to it
+
+    }
 }
